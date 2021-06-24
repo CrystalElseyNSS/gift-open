@@ -28,7 +28,7 @@ $("#box").on("click", function () {
     $("#newYork").toggleClass("openedNYC");
   }, 10500);
   setTimeout(function () {
-    $("#text2").text("Pack your bags! August 21-25th");
+    $("#text2").text("Pack your bags! August 21st-25th");
     $("#text2").css("color", "rgb(247, 246, 223)");
   }, 13250);
   setTimeout(function () {
@@ -57,6 +57,6 @@ $("#box").on("click", function () {
   }, 22500);
   setTimeout(function () {
     $("#text2").css("display", "block");
-    $("#text2").text("Love Shane, Crystal & Rachel");
+    $("#text2").text("From Shane, Crystal, and Rachel!");
   }, 22750);
 });
