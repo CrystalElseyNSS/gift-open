@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+
+/* --------------- Container Styling --------------- */
 
 body {
   background-color: rgb(247, 246, 223);
@@ -11,26 +13,6 @@ body {
   justify-content: center;
 }
 
-#text { 
-  font-size: 50px;
-  font-family: 'Train One', cursive;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 15px;
-}
-
-#text2 { 
-  font-size: 50px;
-  font-family: 'Train One', cursive;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 15px;
-  color: rgb(247, 246, 223);
-  display: none;
-}
-
 .box {
   position: relative;
 }
@@ -39,7 +21,7 @@ body {
   content: "";
   width: 600px;
   height: 600px;
-  background-color: #41A990;
+  background-color: #41a990;
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -49,137 +31,14 @@ body {
   border-radius: 50%;
 }
 
-.openedBorder::before {
-  border: 5px solid #41A990;
-  background-color: rgb(247, 246, 223);
-}
-
-.openedBody {
-  background-color: #41a990;
-}
-
 #box-body {
   position: relative;
   height: 300px;
   width: 300px;
   margin-top: 123.3333333333px;
-  background-color: #B43F33;
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
+  background-color: #b43f33;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(#e29d1b, #B43F33);
-}
-
-#box-body #album {
-  height: 250px;
-  width: 250px;
-  opacity: 0;
-  transform: translateY(0%);
-  transition: all 0.5s;
-  margin: 0 auto;
-  display: block;
-  visibility: hidden;
-}
-
-#box-body .ticket {
-    height: 50px;
-    width: 145;
-    opacity: 0;
-    transform: translateY(0%);
-    transition: all 0.5s;
-    margin: 0 auto;
-    display: block;
-  }
-
-  #box-body #newYork {
-    height: 175px;
-    opacity: 0;
-    transform: translateY(0%);
-    transition: all 0.5s;
-    margin: 0 auto;
-    display: block;
-  }
-
-  #box-body #oysters {
-    opacity: 0;
-    transform: translateY(0%);
-    transition: all 0.5s;
-    margin: 0 auto;
-    display: block;
-    height: 180px;
-  }
-
-  .openedOysters {
-    opacity: 1 !important;
-    position: relative;
-    z-index: 1;
-    transform: translateY(-891px) translateX(-190px) rotate(150deg) !important;
-    visibility: visible !important;
-  }
-
-/* #box-body:hover {
-  cursor: pointer;
-  -webkit-animation: box-body 1s forwards ease-in-out;
-  animation: box-body 1s forwards ease-in-out;
-} */
-
-.openedLid {
-  -webkit-animation: box-lid 1s forwards ease-in-out;
-  animation: box-lid 1s forwards ease-in-out;
-}
-
-.openedAlbum {
-  opacity: 1 !important;
-  z-index: 0;
-  transform: translateY(-207px) translateX(223px) rotate(28deg) !important;
-  visibility: visible !important;
-}
-
-.openedNYC {
-  opacity: 1 !important;
-  z-index: 0;
-  transform: translateY(-620px) translateX(-61px) rotate(-10deg) !important;
-  visibility: visible !important;
-}
-
-.openedTicket#ticket1 {
-  position: relative;
-  opacity: 1 !important;
-  z-index: 1;
-  transform: translateY(-404px) translateX(55px) rotate(18deg) !important;
-  visibility: visible !important;
-}
-
-.openedTicket#ticket2 {
-  opacity: 1 !important;
-  z-index: 0;
-  transform: translateY(-495px) translateX(63px) rotate(35deg) !important;
-  visibility: visible !important;
-}
-.openedTicket#ticket3 {
-  opacity: 1 !important;
-  z-index: 0;
-  transform: translateY(-572px) translateX(95px) rotate(55deg) !important;
-  visibility: visible !important;
-}
-.openedTicket#ticket4 {
-  opacity: 1 !important;
-  z-index: 0;
-  transform: translateY(-622px) translateX(122px) rotate(85deg) !important;
-  visibility: visible !important;
-}
-
-
-
-
-#box-body:hover .box-bowtie::before {
-  -webkit-animation: box-bowtie-left 1.1s forwards ease-in-out;
-  animation: box-bowtie-left 1.1s forwards ease-in-out;
-}
-
-#box-body:hover .box-bowtie::after {
-  -webkit-animation: box-bowtie-right 1.1s forwards ease-in-out;
-  animation: box-bowtie-right 1.1s forwards ease-in-out;
+  background: linear-gradient(#e29d1b, #b43f33);
 }
 
 #box-body::after {
@@ -202,7 +61,7 @@ body {
   transform: translateX(-50%);
   bottom: 90%;
   height: 40px;
-  background-color: #B43F33;
+  background-color: #b43f33;
   height: 40px;
   width: 320px;
   border-radius: 5%;
@@ -251,9 +110,152 @@ body {
   transform: translateX(0%) rotate(90deg) skew(10deg, 10deg);
 }
 
+/* --------------- Text Styling --------------- */
+
+#text {
+  font-size: 50px;
+  font-family: "Train One", cursive;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 15px;
+  display: none;
+  color: rgb(247, 246, 223);
+}
+
+#text2 {
+  font-size: 50px;
+  font-family: "Train One", cursive;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 15px;
+}
+
+/* --------------- Gifts Styling --------------- */
+
+#box-body #album {
+  height: 250px;
+  width: 250px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: all 0.5s;
+  margin: 0 auto;
+  display: block;
+  visibility: hidden;
+}
+
+#box-body .ticket {
+  height: 50px;
+  width: 145;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: all 0.5s;
+  margin: 0 auto;
+  display: block;
+  visibility: hidden;
+}
+
+#box-body #oysters {
+  opacity: 0;
+  transform: translateY(0%);
+  transition: all 0.5s;
+  margin: 0 auto;
+  display: block;
+  height: 180px;
+  visibility: hidden;
+}
+
+#box-body #newYork {
+  height: 175px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: all 0.5s;
+  margin: 0 auto;
+  display: block;
+  visibility: hidden;
+}
+
+/* --------------- Gifts Transitions --------------- */
+
+.openedAlbum {
+  opacity: 1 !important;
+  z-index: 0;
+  transform: translateY(-207px) translateX(223px) rotate(28deg) !important;
+  visibility: visible !important;
+}
+
+.openedTicket#ticket1 {
+  position: relative;
+  opacity: 1 !important;
+  z-index: 1;
+  transform: translateY(-404px) translateX(55px) rotate(18deg) !important;
+  visibility: visible !important;
+}
+
+.openedTicket#ticket2 {
+  opacity: 1 !important;
+  z-index: 0;
+  transform: translateY(-495px) translateX(63px) rotate(35deg) !important;
+  visibility: visible !important;
+}
+
+.openedTicket#ticket3 {
+  opacity: 1 !important;
+  z-index: 0;
+  transform: translateY(-572px) translateX(95px) rotate(55deg) !important;
+  visibility: visible !important;
+}
+
+.openedTicket#ticket4 {
+  opacity: 1 !important;
+  z-index: 0;
+  transform: translateY(-622px) translateX(122px) rotate(85deg) !important;
+  visibility: visible !important;
+}
+
+.openedOysters {
+  opacity: 1 !important;
+  position: relative;
+  z-index: 1;
+  transform: translateY(-891px) translateX(-190px) rotate(150deg) !important;
+  visibility: visible !important;
+}
+
+.openedNYC {
+  opacity: 1 !important;
+  z-index: 0;
+  transform: translateY(-620px) translateX(-61px) rotate(-10deg) !important;
+  visibility: visible !important;
+}
+
+/* --------------- Container Transitions --------------- */
+
+#box-body:hover .box-bowtie::before {
+  -webkit-animation: box-bowtie-left 1.1s forwards ease-in-out;
+  animation: box-bowtie-left 1.1s forwards ease-in-out;
+}
+
+#box-body:hover .box-bowtie::after {
+  -webkit-animation: box-bowtie-right 1.1s forwards ease-in-out;
+  animation: box-bowtie-right 1.1s forwards ease-in-out;
+}
+
+.openedBody {
+  background-color: #41a990;
+}
+
+.openedBorder::before {
+  background-color: rgb(247, 246, 223);
+}
+
+.openedLid {
+  -webkit-animation: box-lid 1s forwards ease-in-out;
+  animation: box-lid 1s forwards ease-in-out;
+}
+
 @-webkit-keyframes box-lid {
-  0%,
-  42% {
+  0%, 42% {
     -webkit-transform: translate3d(-50%, 0%, 0) rotate(0deg);
     transform: translate3d(-50%, 0%, 0) rotate(0deg);
   }
@@ -261,16 +263,14 @@ body {
     -webkit-transform: translate3d(-85%, -230%, 0) rotate(-25deg);
     transform: translate3d(-85%, -230%, 0) rotate(-25deg);
   }
-  90%,
-  100% {
+  90%, 100% {
     -webkit-transform: translate3d(-119%, 225%, 0) rotate(-70deg);
     transform: translate3d(-119%, 225%, 0) rotate(-70deg);
   }
 }
 
 @keyframes box-lid {
-  0%,
-  42% {
+  0%, 42% {
     -webkit-transform: translate3d(-50%, 0%, 0) rotate(0deg);
     transform: translate3d(-50%, 0%, 0) rotate(0deg);
   }
@@ -278,12 +278,12 @@ body {
     -webkit-transform: translate3d(-85%, -230%, 0) rotate(-25deg);
     transform: translate3d(-85%, -230%, 0) rotate(-25deg);
   }
-  90%,
-  100% {
+  90%, 100% {
     -webkit-transform: translate3d(-119%, 225%, 0) rotate(-70deg);
     transform: translate3d(-119%, 225%, 0) rotate(-70deg);
   }
 }
+
 @-webkit-keyframes box-body {
   0% {
     -webkit-transform: translate3d(0%, 0%, 0) rotate(0deg);
@@ -302,6 +302,7 @@ body {
     transform: translate3d(0%, 0%, 0) rotate(0deg);
   }
 }
+
 @keyframes box-body {
   0% {
     -webkit-transform: translate3d(0%, 0%, 0) rotate(0deg);
@@ -320,89 +321,57 @@ body {
     transform: translate3d(0%, 0%, 0) rotate(0deg);
   }
 }
+
 @-webkit-keyframes box-bowtie-right {
-  0%,
-  50%,
-  75% {
+  0%, 50%, 75% {
     -webkit-transform: translateX(0%) rotate(90deg) skew(10deg, 10deg);
     transform: translateX(0%) rotate(90deg) skew(10deg, 10deg);
   }
-  90%,
-  100% {
+  90%, 100% {
     -webkit-transform: translate(-50%, -15%) rotate(45deg) skew(10deg, 10deg);
     transform: translate(-50%, -15%) rotate(45deg) skew(10deg, 10deg);
     box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.3);
   }
 }
+
 @keyframes box-bowtie-right {
-  0%,
-  50%,
-  75% {
+  0%, 50%, 75% {
     -webkit-transform: translateX(0%) rotate(90deg) skew(10deg, 10deg);
     transform: translateX(0%) rotate(90deg) skew(10deg, 10deg);
   }
-  90%,
-  100% {
+  90%, 100% {
     -webkit-transform: translate(-50%, -15%) rotate(45deg) skew(10deg, 10deg);
     transform: translate(-50%, -15%) rotate(45deg) skew(10deg, 10deg);
     box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.3);
   }
 }
+
 @-webkit-keyframes box-bowtie-left {
   0% {
     -webkit-transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
     transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
   }
-  50%,
-  75% {
+  50%, 75% {
     -webkit-transform: translate(-50%, -15%) rotate(45deg) skew(10deg, 10deg);
     transform: translate(-50%, -15%) rotate(45deg) skew(10deg, 10deg);
   }
-  90%,
-  100% {
+  90%, 100% {
     -webkit-transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
     transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
   }
 }
+
 @keyframes box-bowtie-left {
   0% {
     -webkit-transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
     transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
   }
-  50%,
-  75% {
+  50%, 75% {
     -webkit-transform: translate(-50%, -15%) rotate(45deg) skew(10deg, 10deg);
     transform: translate(-50%, -15%) rotate(45deg) skew(10deg, 10deg);
   }
-  90%,
-  100% {
+  90%, 100% {
     -webkit-transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
     transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
   }
 }
-
-
-
-
-
-
-
-
-@keyframes loading {
-  0%   { cy: 10; }
-  25%  { cy: 3; }
-  50%  { cy: 10; }
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-}
-
-canvas {
-  height: 100vh;
-  pointer-events: none;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
-
