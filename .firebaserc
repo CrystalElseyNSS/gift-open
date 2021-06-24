@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "gift-open"
+  },
+  "targets": {
+    "gift-open": {
+      "hosting": {
+        "happybirthdayleah": [
+          "leah"
+        ],
+        "leah": [
+          "happybirthdayleah"
+        ]
+      }
+    }
+  }
+}
