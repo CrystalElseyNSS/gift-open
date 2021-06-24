@@ -1,8 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+body {
+  background-color: rgb(247, 246, 223);
+}
+
 .box-container {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
+}
+
+#text { 
+  font-size: 50px;
+  font-family: 'Train One', cursive;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 15px;
+}
+
+#text2 { 
+  font-size: 50px;
+  font-family: 'Train One', cursive;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 15px;
+  color: rgb(247, 246, 223);
+  display: none;
 }
 
 .box {
@@ -13,7 +39,7 @@
   content: "";
   width: 600px;
   height: 600px;
-  background-color: #4e9152;
+  background-color: #41A990;
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -23,21 +49,30 @@
   border-radius: 50%;
 }
 
+.openedBorder::before {
+  border: 5px solid #41A990;
+  background-color: rgb(247, 246, 223);
+}
+
+.openedBody {
+  background-color: #41a990;
+}
+
 #box-body {
   position: relative;
   height: 300px;
   width: 300px;
   margin-top: 123.3333333333px;
-  background-color: #da8846;
+  background-color: #B43F33;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(#762c2c, #da8846);
+  background: linear-gradient(#e29d1b, #B43F33);
 }
 
 #box-body #album {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   opacity: 0;
   transform: translateY(0%);
   transition: all 0.5s;
@@ -46,9 +81,9 @@
   visibility: hidden;
 }
 
-#box-body #tickets {
+#box-body .ticket {
     height: 50px;
-    width: 80px;
+    width: 145;
     opacity: 0;
     transform: translateY(0%);
     transition: all 0.5s;
@@ -56,11 +91,37 @@
     display: block;
   }
 
-#box-body:hover {
+  #box-body #newYork {
+    height: 175px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: all 0.5s;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #box-body #oysters {
+    opacity: 0;
+    transform: translateY(0%);
+    transition: all 0.5s;
+    margin: 0 auto;
+    display: block;
+    height: 180px;
+  }
+
+  .openedOysters {
+    opacity: 1 !important;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-891px) translateX(-190px) rotate(150deg) !important;
+    visibility: visible !important;
+  }
+
+/* #box-body:hover {
   cursor: pointer;
   -webkit-animation: box-body 1s forwards ease-in-out;
   animation: box-body 1s forwards ease-in-out;
-}
+} */
 
 .openedLid {
   -webkit-animation: box-lid 1s forwards ease-in-out;
@@ -70,15 +131,45 @@
 .openedAlbum {
   opacity: 1 !important;
   z-index: 0;
-  transform: translateY(-212px) translateX(150px) rotate(11deg) !important;
+  transform: translateY(-207px) translateX(223px) rotate(28deg) !important;
   visibility: visible !important;
 }
 
-/* #box-body:hover #tickets {
-    opacity: 1;
-    z-index: 0;
-    transform: translateY(-333px) translateX(293px) rotate(118deg);
-} */
+.openedNYC {
+  opacity: 1 !important;
+  z-index: 0;
+  transform: translateY(-620px) translateX(-61px) rotate(-10deg) !important;
+  visibility: visible !important;
+}
+
+.openedTicket#ticket1 {
+  position: relative;
+  opacity: 1 !important;
+  z-index: 1;
+  transform: translateY(-404px) translateX(55px) rotate(18deg) !important;
+  visibility: visible !important;
+}
+
+.openedTicket#ticket2 {
+  opacity: 1 !important;
+  z-index: 0;
+  transform: translateY(-495px) translateX(63px) rotate(35deg) !important;
+  visibility: visible !important;
+}
+.openedTicket#ticket3 {
+  opacity: 1 !important;
+  z-index: 0;
+  transform: translateY(-572px) translateX(95px) rotate(55deg) !important;
+  visibility: visible !important;
+}
+.openedTicket#ticket4 {
+  opacity: 1 !important;
+  z-index: 0;
+  transform: translateY(-622px) translateX(122px) rotate(85deg) !important;
+  visibility: visible !important;
+}
+
+
 
 
 #box-body:hover .box-bowtie::before {
@@ -111,7 +202,7 @@
   transform: translateX(-50%);
   bottom: 90%;
   height: 40px;
-  background-color: #da8846;
+  background-color: #B43F33;
   height: 40px;
   width: 320px;
   border-radius: 5%;
@@ -131,7 +222,7 @@
 }
 
 .box-bowtie {
-  color: whitesmoke;
+  color: #fdf3c0;
   z-index: 1;
   height: 100%;
 }
@@ -141,7 +232,7 @@
   content: "";
   width: 83.3333333333px;
   height: 83.3333333333px;
-  border: 16.6666666667px solid white;
+  border: 16.6666666667px solid #fdf3c0;
   border-radius: 50% 50% 0 50%;
   position: absolute;
   bottom: 99%;
@@ -296,20 +387,22 @@
 
 
 
-#canvas-container-div {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  height: 100%;
+
+@keyframes loading {
+  0%   { cy: 10; }
+  25%  { cy: 3; }
+  50%  { cy: 10; }
 }
 
-#canvas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  height: 100%;
+body {
+  -webkit-font-smoothing: antialiased;
 }
+
+canvas {
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+

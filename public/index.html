@@ -5,29 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/409445/verletExpress.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Happy Birthday, Leah!</title>
 </head>
 <body>
+  <h1 id="text"></h1>
+  <h1 id="text2">Pack your bags! August 21-25th</h1>
     <div class="container">
         <div class="row">
           <div class="box-container">
-            <div class="box">
+            <div id="box" class="box">
               <div id="box-body">
-                <img id="album" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetNm0W0L2e7XXe4qTtj16pk4M-c07j0pXzeUsvfS_l1Fm2bFPHKJ6C509HnXt10wkJZk&usqp=CAU">
-                <img id="tickets" src="https://previews.123rf.com/images/pixelrobot/pixelrobot1504/pixelrobot150400427/38260185-pair-of-blank-concert-tickets-isolated-on-white-background-.jpg">
+                <img id="album" class="ticket" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetNm0W0L2e7XXe4qTtj16pk4M-c07j0pXzeUsvfS_l1Fm2bFPHKJ6C509HnXt10wkJZk&usqp=CAU">
+                <img id="ticket1" class="ticket" src="./assets/ticket.png">
+                <img id="ticket2" class="ticket" src="./assets/ticket.png">
+                <img id="ticket3" class="ticket" src="./assets/ticket.png">
+                <img id="ticket4" class="ticket" src="./assets/ticket.png">
+                <img id="newYork" src="./assets/postcard.png">
+                <img id="oysters" src="./assets/oysters.png">
                 <div id="box-lid">
                   <div class="box-bowtie"></div>
                 </div>
-              </div>
-              <div id="canvas-container-div">
-                <canvas id="canvas"></canvas>
+                <audio id="sidepony">
+                  <source src="assets/sidepony.mp3" type="audio/mpeg">
+                </audio>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
       <script src="main.js"></script>
 </body>
 </html>
