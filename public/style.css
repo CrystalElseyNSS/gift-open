@@ -19,8 +19,8 @@ body {
 
 .box::before {
   content: "";
-  width: 600px;
-  height: 600px;
+  width: 450px;
+  height: 450px;
   background-color: #41a990;
   position: absolute;
   z-index: -1;
@@ -33,9 +33,9 @@ body {
 
 #box-body {
   position: relative;
-  height: 300px;
-  width: 300px;
-  margin-top: 123.3333333333px;
+  height: 225px;
+  width: 225px;
+  margin-top: 120px;
   background-color: #b43f33;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
   background: linear-gradient(#e29d1b, #b43f33);
@@ -63,7 +63,7 @@ body {
   height: 40px;
   background-color: #b43f33;
   height: 40px;
-  width: 320px;
+  width: 235px;
   border-radius: 5%;
   box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.3);
 }
@@ -89,9 +89,9 @@ body {
 .box-bowtie::before,
 .box-bowtie::after {
   content: "";
-  width: 83.3333333333px;
-  height: 83.3333333333px;
-  border: 16.6666666667px solid #fdf3c0;
+  width: 83px;
+  height: 83px;
+  border: 16px solid #fdf3c0;
   border-radius: 50% 50% 0 50%;
   position: absolute;
   bottom: 99%;
@@ -113,30 +113,20 @@ body {
 /* --------------- Text Styling --------------- */
 
 #text {
+  color: #41a990;
   font-size: 50px;
   font-family: "Train One", cursive;
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 15px;
-  display: none;
-  color: rgb(247, 246, 223);
-}
-
-#text2 {
-  font-size: 50px;
-  font-family: "Train One", cursive;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 15px;
+  bottom: 10px;
 }
 
 /* --------------- Gifts Styling --------------- */
 
 #box-body #album {
-  height: 250px;
-  width: 250px;
+  height: 230px;
+  width: 230px;
   opacity: 0;
   transform: translateY(0%);
   transition: all 0.5s;
@@ -167,7 +157,7 @@ body {
 }
 
 #box-body #newYork {
-  height: 175px;
+  height: 150px;
   opacity: 0;
   transform: translateY(0%);
   transition: all 0.5s;
@@ -181,7 +171,7 @@ body {
 .openedAlbum {
   opacity: 1 !important;
   z-index: 0;
-  transform: translateY(-207px) translateX(223px) rotate(28deg) !important;
+  transform: translateY(-190px) translateX(200px) rotate(28deg) !important;
   visibility: visible !important;
 }
 
@@ -218,14 +208,14 @@ body {
   opacity: 1 !important;
   position: relative;
   z-index: 1;
-  transform: translateY(-891px) translateX(-190px) rotate(150deg) !important;
+  transform: translateY(-837px) translateX(-185px) rotate( 146deg ) !important;
   visibility: visible !important;
 }
 
 .openedNYC {
   opacity: 1 !important;
   z-index: 0;
-  transform: translateY(-620px) translateX(-61px) rotate(-10deg) !important;
+  transform: translateY(-585px) translateX(-48px) rotate( -10deg ) !important;
   visibility: visible !important;
 }
 
